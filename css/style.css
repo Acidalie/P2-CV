@@ -1,29 +1,29 @@
 /*mobile first*/
 
 html{
-    padding: 0;
     margin: 0;
-    background-color: #FFFFFF;
+    padding: 0;
     font-size: .625em; /* fallback IE8+ */
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    background-color: #FFFFFF;
 }
 body {
-    background: fixed;/*le fond restera fixe lorsque je mettrais une image*/
-    font-size: 1.4em; /* base font-size is equivalent "14px" */
-    color: black;
-    font-family: calibri, arial, sans-serif;
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
     box-sizing: border-box;
     text-align: center;
-    word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
-    border: 1px black solid;/*encadrement de mon cv*/
     max-width: 1070px;
+    border: 1px black solid;/*encadrement de mon cv*/
+    font-size: 1.4em; /* base font-size equivalent à "14px" */
+    font-family: calibri, arial, sans-serif;
+    background-color: #FFFFFF;
+    background: fixed;/*le fond restera fixe lorsque je mettrais une image*/
+    color: black;
 }
 header{/* partie en-tete*/
     margin: 15px;
-    padding: 0px;
+    padding: 0;
     line-height: 15px;/*hauteur des lignes*/
 }
 main{/*partie principale*/
@@ -31,17 +31,17 @@ main{/*partie principale*/
     padding: 20px;
 }
 h1 {/* Titre principal Julie Beguier */
-    font-weight: normal;/*ne sera plus en gras*/
     font-size: 6rem;
+    font-weight: normal;/*ne sera plus en gras*/
     text-transform: uppercase;/*texte en capitale*/
 }
 ul{
-    padding: 0;
     margin-left: 0;
+    padding: 0;
 }
 li{
-    list-style-type: none;
     margin: 5px;
+    list-style-type: none;
 }
 .firstname-color{
     color: #34667D;
@@ -54,8 +54,8 @@ li{
 }
 /* partie Main*/
 .fa-user-graduate, .fa-briefcase, .fa-thumbs-up{/*icones titre h2*/
-    color: #34667D;
     font-size: 2.5rem;
+    color: #34667D;
 }
 .fa-dot-circle,.fa-circle{/*icones point*/
     font-size: 1rem;
@@ -65,28 +65,28 @@ li{
     padding-left: 20px;
 }
 h2{/*formations, experiences, recommandation.*/
-    font-weight: bold;
-    font-size: 2.5rem;
-    border-bottom: 3px #34667D solid;
     width: 100%;
+    border-bottom: 3px #34667D solid;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 h3{/*titre de la div*/
     margin-bottom: 0;
-    font-weight: bold;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 .bold{/*établissement etudié et travaillé*/
+    font-size: 1.7rem;
     font-weight: bold;
-    font-size: 1.7rem
 }
 .italic{/*fonction*/
     font-style: italic;
 }
 .pmain{
-    padding: 10px;
     margin: 5px;
-    text-align: justify;
+    padding: 10px;
     width: 55%;
+    text-align: justify;
 }
 .list-organisation{/*élements des listes dans le "main" mis en page*/
     display: flex;
@@ -108,39 +108,39 @@ div{
     background-color: #34667D
 }
 .image-cv{
-    width: 180px;
-    height: 180px;
+    text-align: center;
     border: 2px black solid;
     border-radius: 250px;
-    text-align: center;
+    width: 180px;
+    height: 180px;
 }
 .h3-background{/*fond des titres dans la div*/
     margin-top: 0;
     padding: 2px 0 2px 0;
-    color: #34667D;
     background-color: black;
+    color: #34667D;
 }
 .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
-    padding: 10px 35px;
     text-align: justify;
+    padding: 10px 35px;
     line-height: 2.5rem;
 }
-/*section hobbies*/
 
+/*section hobbies*/
 .list-hobbies{
- 	list-style-type: none;
  	display: flex;
  	flex-direction: row;
  	justify-content: space-evenly;
+    list-style-type: none;
 }
  .fa-biking, .fa-mountain, .fa-globe-europe{
+    text-align: center;
     margin: 25px 10px 30px 10px;
-  	width: 50px;
-  	height: 50px;
   	border: 2px black solid;
   	border-radius: 250px;
+    width: 50px;
+    height: 50px;
   	font-size: 3rem;
-  	text-align: center;
  }
 .fa-globe-europe::before{
  	position:relative;
@@ -155,137 +155,141 @@ div{
  	top:10px;
  }
 
-/*section hobbies autre code mais les cercles ne sont pas tout a fait rond
-.list-hobbies {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.fa-biking, .fa-mountain, .fa-globe-europe{
-    border:black 3px solid;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 2.5rem;
-}*/
-
 /*Small devices (landscape phones, 576px and up)*/
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
 
-body{
-    margin: 10px;
-    text-align: justify;
+    body {
+        text-align: justify;
+        margin: 10px;
+    }
+    .fa-dot-circle, .fa-circle { /*icones point*/
+        padding-top: 3px;
+        padding-right: 8px;
+        width: 20px;
+    }
+    /*organisation mise en page partie formation, expe, recommand*/
+    .padding-10 {
+        display: flex;
+        flex-direction: row;
+    }
+    address {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        padding-left: 35px;
+        line-height: 3rem;
+    }
+    h3 {
+        text-align: center;
+    }
+    h4 {
+        margin: 14px
+    }
+    .image-cv {
+        margin-left: 210px;
+    }
+    .padding-right-80px{
+        padding-right: 20px;
+    }
 }
-.fa-dot-circle,.fa-circle { /*icones point*/
-    width: 20px;
-    padding-top: 3px;
-    padding-right : 8px;
-}
-/*organisation mise en page partie formation, expe, recommand*/
-.padding-10{/*pourquoi le point remonte?*/
-    display: flex;
-    flex-direction: row;
-}
-address{
-    display: flex;
-    flex-direction:column;
-    justify-content:space-around;
-    padding-left: 35px;
-    text-align :left;
-    line-height: 3rem;
-}
-h3{
-    text-align: center;
-
-}
-h4{
-    margin: 14px
-
-}
-.image-cv{
-    margin-left: 210px;
-}
-
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
 
-body{
-    height:1650px;
+    body {
+        height: 1650px;
+    }
+    header {
+        position: relative;
+        top: 20px;
+        left: 370px;
+        width: 768px;
+    }
+    main {
+        position: absolute;
+        padding: 50px 10px 0;
+        margin-top: 150px;
+        margin-right: 50px;
+        margin-left: 370px;
+        width: 358px;
+    }
+    h2{/* experiences professionnelles*/
+        text-align: center;
+        width: 100%;
+        border-bottom: 3px #34667D solid;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .padding-right-80px{
+        padding-right: 20px;
+    }
+    div {
+        position: absolute;
+        margin-top: 0;
+        width: 350px;
+        height: 1650px;
+    }
+    .image-cv { /*photo centré dans div*/
+        margin-left: 40px;
+    }
 }
-header{
-    width: 768px;
-    position: relative;
-    top: 20px;
-    left: 370px
-}
-main{
-    position: absolute;
-    padding: 50px 10px 0;
-    margin-top: 150px;
-    margin-right:50px;
-    margin-left:370px;
-    width: 358px;
-}
-div{
-    position: absolute;
-    margin-top: 0;
-    width: 350px;
-    height:1650px;
-}
-.image-cv{/*photo centré dans div*/
-    margin-left: 40px;
-}
-
 /* Large devices (desktops, 992px and up)*/
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
 
-body{
-    height:1296px;
+    body {
+        height: 1296px;
+    }
+    header {
+        position: relative;
+        top: 20px;
+        left: 370px;
+        width: 992px;
+    }
+    main {
+        position: absolute;
+        margin-top: 150px;
+        margin-right: 50px;
+        margin-left: 370px;
+        width: 642px;
+    }
+    h2{/* experiences professionnelles*/
+        text-align: left;
+        width: 100%;
+        border-bottom: 3px #34667D solid;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    div {
+        position: absolute;
+        margin-top: 0;
+        width: 350px;
+        height: 1295px;
+    }
 }
-header {
-    width: 992px;
-    position: relative;
-    top: 20px;
-    left: 370px
-}
-main{
-    position: absolute;
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-left:370px;
-    width: 642px;
-}
-div{
-    position: absolute;
-    margin-top: 0;
-    width: 350px;
-    height:1295px;
-}
-
 /*Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
 
-body{
-    height:1296px;
-    margin-left: 230px;
+    body {
+        margin-left: 230px;
+        height: 1296px;
+    }
+    header {
+        position: relative;
+        top: 20px;
+        left: 370px;
+        width: 992px;
+    }
+    main {
+        position: absolute;
+        margin-top: 150px;
+        margin-right: 50px;
+        margin-left: 370px;
+        width: 642px;
+    }
+    div {
+        position: absolute;
+        margin-top: 0;
+        width: 350px;
+        height: 1295px;
+    }
 }
-header{
-    width: 992px;
-    position: relative;
-    top: 20px;
-    left: 370px
-}
-main{
-    position: absolute;
-    margin-top: 150px;
-    margin-right: 50px;
-    margin-left:370px;
-    width: 642px;
-}
-div{
-    position: absolute;
-    margin-top: 0;
-    width: 350px;
-    height:1295px;
-}
-
