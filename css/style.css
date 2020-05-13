@@ -1,0 +1,291 @@
+/*mobile first*/
+
+html{
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+body {
+    background: fixed;/*le fond restera fixe lorsque je mettrais une image*/
+    font-size: 1.4em; /* base font-size is equivalent "14px" */
+    color: black;
+    font-family: calibri, arial, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
+    border: 1px black solid;/*encadrement de mon cv*/
+    max-width: 1070px;
+}
+header{/* partie en-tete*/
+    margin: 15px;
+    padding: 0px;
+    line-height: 15px;/*hauteur des lignes*/
+}
+main{/*partie principale*/
+    padding-top: 30px;
+    padding: 20px;
+}
+h1 {/* Titre principal Julie Beguier */
+    font-weight: normal;/*ne sera plus en gras*/
+    font-size: 6rem;
+    text-transform: uppercase;/*texte en capitale*/
+}
+ul{
+    padding: 0;
+    margin-left: 0;
+}
+li{
+    list-style-type: none;
+    margin: 5px;
+}
+.firstname-color{
+    color: #34667D;
+}
+.subtitle-header{
+    font-size: 3rem;
+}
+.under-dev{
+    text-decoration: underline #34667D;
+}
+/* partie Main*/
+.fa-user-graduate, .fa-briefcase, .fa-thumbs-up{/*icones titre h2*/
+    color: #34667D;
+    font-size: 2.5rem;
+}
+.fa-dot-circle,.fa-circle{/*icones point*/
+    font-size: 1rem;
+    color: #34667D
+}
+.titre-h2 {
+    padding-left: 20px;
+}
+h2{/*formations, experiences, recommandation.*/
+    font-weight: bold;
+    font-size: 2.5rem;
+    border-bottom: 3px #34667D solid;
+    width: 100%;
+}
+h3{/*titre de la div*/
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.bold{/*établissement etudié et travaillé*/
+    font-weight: bold;
+    font-size: 1.7rem
+}
+.italic{/*fonction*/
+    font-style: italic;
+}
+.pmain{
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+    width: 55%;
+}
+.list-organisation{/*élements des listes dans le "main" mis en page*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 0;
+    margin-right: 0;
+}
+.padding-right-80px{
+    padding-right: 80px;
+}
+
+/* Partie DIV */
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #34667D
+}
+.image-cv{
+    width: 180px;
+    height: 180px;
+    border: 2px black solid;
+    border-radius: 250px;
+    text-align: center;
+}
+.h3-background{/*fond des titres dans la div*/
+    margin-top: 0;
+    padding: 2px 0 2px 0;
+    color: #34667D;
+    background-color: black;
+}
+.padding-20 { /* décalage de 20px du texte "a propos" dans div*/
+    padding: 10px 35px;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+/*section hobbies*/
+
+.list-hobbies{
+ 	list-style-type: none;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-evenly;
+}
+ .fa-biking, .fa-mountain, .fa-globe-europe{
+    margin: 25px 10px 30px 10px;
+  	width: 50px;
+  	height: 50px;
+  	border: 2px black solid;
+  	border-radius: 250px;
+  	font-size: 3rem;
+  	text-align: center;
+ }
+.fa-globe-europe::before{
+ 	position:relative;
+ 	top:11px;
+}
+.fa-mountain::before{
+ 	position:relative;
+ 	top:9px;
+ }
+.fa-biking::before{
+ 	position:relative;
+ 	top:10px;
+ }
+
+/*section hobbies autre code mais les cercles ne sont pas tout a fait rond
+.list-hobbies {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fa-biking, .fa-mountain, .fa-globe-europe{
+    border:black 3px solid;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 2.5rem;
+}*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px){
+
+body{
+    margin: 10px;
+    text-align: justify;
+}
+.fa-dot-circle,.fa-circle { /*icones point*/
+    width: 20px;
+    padding-top: 3px;
+    padding-right : 8px;
+}
+/*organisation mise en page partie formation, expe, recommand*/
+.padding-10{/*pourquoi le point remonte?*/
+    display: flex;
+    flex-direction: row;
+}
+address{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    padding-left: 35px;
+    text-align :left;
+    line-height: 3rem;
+}
+h3{
+    text-align: center;
+
+}
+h4{
+    margin: 14px
+
+}
+.image-cv{
+    margin-left: 210px;
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {
+
+body{
+    height:1650px;
+}
+header{
+    width: 768px;
+    position: relative;
+    top: 20px;
+    left: 370px
+}
+main{
+    position: absolute;
+    padding: 50px 10px 0;
+    margin-top: 150px;
+    margin-right:50px;
+    margin-left:370px;
+    width: 358px;
+}
+div{
+    position: absolute;
+    margin-top: 0;
+    width: 350px;
+    height:1650px;
+}
+.image-cv{/*photo centré dans div*/
+    margin-left: 40px;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px){
+
+body{
+    height:1296px;
+}
+header {
+    width: 992px;
+    position: relative;
+    top: 20px;
+    left: 370px
+}
+main{
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left:370px;
+    width: 642px;
+}
+div{
+    position: absolute;
+    margin-top: 0;
+    width: 350px;
+    height:1295px;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+
+body{
+    height:1296px;
+    margin-left: 230px;
+}
+header{
+    width: 992px;
+    position: relative;
+    top: 20px;
+    left: 370px
+}
+main{
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left:370px;
+    width: 642px;
+}
+div{
+    position: absolute;
+    margin-top: 0;
+    width: 350px;
+    height:1295px;
+}
+
