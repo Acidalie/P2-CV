@@ -1,4 +1,3 @@
-/*mobile first*/
 
 html{
     margin: 0;
@@ -7,14 +6,15 @@ html{
     font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
     background-color: #FFFFFF;
 }
+/*mobile first*/
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
     box-sizing: border-box;
     text-align: center;
     max-width: 1070px;
-    border: 1px black solid;/*encadrement de mon cv*/
+    max-height: 3000px;
     font-size: 1.4em; /* base font-size equivalent à "14px" */
     font-family: calibri, arial, sans-serif;
     background-color: #FFFFFF;
@@ -22,13 +22,16 @@ body {
     color: black;
 }
 header{/* partie en-tete*/
+    position: absolute;
+    top: 20px;
     margin: 15px;
     padding: 0;
     line-height: 15px;/*hauteur des lignes*/
 }
 main{/*partie principale*/
-    padding-top: 30px;
-    padding: 20px;
+    position: relative;
+    top: 200px;
+    padding: 0px 20px 0;
 }
 h1 {/* Titre principal Julie Beguier */
     font-size: 6rem;
@@ -96,7 +99,7 @@ h3{/*titre de la div*/
     margin-right: 0;
 }
 .padding-right-80px{
-    padding-right: 80px;
+    padding-right: 0;
 }
 
 /* Partie DIV */
@@ -104,6 +107,8 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    top: 200px;
     margin: 0;
     background-color: #34667D
 }
@@ -160,7 +165,17 @@ div{
 
     body {
         text-align: justify;
+        height: 2200px;
+        border: 1px black solid;/*encadrement de mon cv*/
         margin: 10px;
+    }
+    main{
+        position: relative;
+        top: 20px;
+    }
+    div{
+        position: relative;
+        top: 0;
     }
     .fa-dot-circle, .fa-circle { /*icones point*/
         padding-top: 3px;
@@ -176,8 +191,7 @@ div{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        text-align: left;
-        padding-left: 35px;
+        text-align: center;
         line-height: 3rem;
     }
     h3 {
@@ -197,17 +211,18 @@ div{
 @media screen and (min-width: 768px) {
 
     body {
-        height: 1650px;
+        height: 1600px;
     }
     header {
-        position: relative;
-        top: 20px;
+        position: absolute;
+        top: 40px;
         left: 370px;
         width: 768px;
     }
     main {
         position: absolute;
-        padding: 50px 10px 0;
+        top: 70px;
+        padding: 0 10px 0;
         margin-top: 150px;
         margin-right: 50px;
         margin-left: 370px;
@@ -220,14 +235,15 @@ div{
         font-size: 2.5rem;
         font-weight: bold;
     }
-    .padding-right-80px{
-        padding-right: 20px;
+    .padding-right-80px{/*liste de droite dans recommandation*/
+        padding-right: 0;
     }
     div {
         position: absolute;
+        top: 10px;
         margin-top: 0;
         width: 350px;
-        height: 1650px;
+        height: 1600px;
     }
     .image-cv { /*photo centré dans div*/
         margin-left: 40px;
@@ -240,13 +256,14 @@ div{
         height: 1296px;
     }
     header {
-        position: relative;
-        top: 20px;
+        position: absolute;
+        top: 50px;
         left: 370px;
         width: 992px;
     }
     main {
-        position: absolute;
+        position: relative;
+        top: 0;
         margin-top: 150px;
         margin-right: 50px;
         margin-left: 370px;
@@ -265,25 +282,29 @@ div{
         width: 350px;
         height: 1295px;
     }
+    .padding-right-80px{/*liste de droite dans recommandation*/
+        padding-right: 80px;
+    }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
 
     body {
-        margin-left: 230px;
+        margin-left: 300px;
         height: 1296px;
     }
     header {
-        position: relative;
-        top: 20px;
-        left: 370px;
+        position: absolute;
+        top: 50px;
+        left: 675px;
         width: 992px;
     }
     main {
-        position: absolute;
+        position: relative;
+        top: 0;
         margin-top: 150px;
         margin-right: 50px;
-        margin-left: 370px;
+        margin-left: 380px;
         width: 642px;
     }
     div {
