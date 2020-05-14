@@ -20,5 +20,8 @@ P2-CV est mon curriculum vitae créé avec l'éditeur de texte WebStorm en .html
 ## Auteur  
 Julie Béguier  
 
+## Site Web  
+https://julie-beguier.github.io/P2-CV/
+
 ## License  
 Code released under the MIT License 
