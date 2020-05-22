@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
     margin: auto;
     text-align: center;
-    max-width: 1070px;
     font-size: 1.4em; /* base font-size equivalent à "14px" */
     font-family: calibri, arial, sans-serif;
     background-color: #FFFFFF;
@@ -26,13 +25,13 @@ body {
 header {/* partie en-tete*/
     position: absolute;
     top: 25px;
-    padding-left: 12vw;
+    padding-left: 16vw;
     line-height: 15px;/*hauteur des lignes*/
     text-align: center;
 }
 
 h1 {/* Titre principal Julie Beguier */
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: normal;/*ne sera plus en gras*/
     text-transform: uppercase;/*texte en capitale*/
 }
@@ -42,7 +41,7 @@ h1 {/* Titre principal Julie Beguier */
 }
 
 .subtitle-header {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .under-dev {
@@ -51,7 +50,7 @@ h1 {/* Titre principal Julie Beguier */
 
 main {/*partie principale*/
     position: relative;
-    top: 200px;
+    top: 25vh;
     padding: 0 4vw;
 }
 
@@ -119,7 +118,7 @@ div{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    top: 200px;
+    top: 24vh;
     margin: 0;
     background-color: #34667D
 }
@@ -143,9 +142,9 @@ figure {
 }
 
 .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
-    text-align: justify;
     padding: 3vh 10vw;
     line-height: 2.5rem;
+    text-align: justify;
 }
 
 /*section hobbies*/
@@ -159,13 +158,13 @@ figure {
  .fa-biking,
  .fa-mountain,
  .fa-globe-europe {
-    text-align: center;
     margin: 5vh 1vw;
   	border: 2px black solid;
   	border-radius: 250px;
     width: 50px;
     height: 50px;
-  	font-size: 3rem;
+    text-align: center;
+    font-size: 3rem;
  }
 
 .fa-globe-europe::before {
@@ -186,12 +185,20 @@ figure {
 @media screen and (min-width: 576px) {
 
     body {
-        text-align: justify;
         margin: auto;
+        text-align: justify;
     }
 
     header {
-        margin-left: 12vw ;
+        margin-left: 10vw ;
+    }
+
+    h1 { /* Titre principal Julie Beguier */
+        font-size: 6rem;
+    }
+
+    .subtitle-header {
+        font-size: 3rem;
     }
 
     main {
@@ -285,8 +292,8 @@ figure {
     }
 
     .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
-        text-align: justify;
         padding: 3vh 3vw;
+        text-align: justify;
         line-height: 2.5rem;
     }
 }
@@ -356,8 +363,8 @@ figure {
     .fa-biking,
     .fa-mountain,
     .fa-globe-europe {
-        text-align: center;
         margin: 1vh 1vw;
+        text-align: center;
     }
 }
 
