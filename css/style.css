@@ -25,13 +25,13 @@ body {
 header {/* partie en-tete*/
     position: absolute;
     top: 25px;
-    padding-left: 16vw;
-    line-height: 15px;/*hauteur des lignes*/
+    padding-left: 10vw;
+    line-height: 12px;/*hauteur des lignes*/
     text-align: center;
 }
 
 h1 {/* Titre principal Julie Beguier */
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: normal;/*ne sera plus en gras*/
     text-transform: uppercase;/*texte en capitale*/
 }
