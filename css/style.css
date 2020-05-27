@@ -24,14 +24,14 @@ body {
 
 header {/* partie en-tete*/
     position: absolute;
-    top: 25px;
-    padding-left: 10vw;
-    line-height: 12px;/*hauteur des lignes*/
+    top: 8px;
+    width: 100%;
     text-align: center;
 }
 
 h1 {/* Titre principal Julie Beguier */
-    font-size: 4rem;
+    margin-bottom: 15px;
+    font-size: 5rem;
     font-weight: normal;/*ne sera plus en gras*/
     text-transform: uppercase;/*texte en capitale*/
 }
@@ -118,7 +118,7 @@ div{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    top: 24vh;
+    top: 25vh;
     margin: 0;
     background-color: #34667D
 }
@@ -189,10 +189,6 @@ figure {
         text-align: justify;
     }
 
-    header {
-        margin-left: 10vw ;
-    }
-
     h1 { /* Titre principal Julie Beguier */
         font-size: 6rem;
     }
@@ -202,13 +198,12 @@ figure {
     }
 
     main {
-        position: relative;
-        top: 25vh;
+        margin-top: 70px;
     }
 
     div {
         position: relative;
-        top: 25vh;
+        top: 30vh;
     }
 
     .fa-dot-circle,
@@ -234,31 +229,31 @@ figure {
     h3 {
         text-align: center;
     }
+    .list-organisation-recommandation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
 
     body {
-        margin: auto;
-        height: 1500px;
-        max-width: 768px;
-        border: 1px black solid;/*encadrement de mon cv*/
+        height: 100%;
+        max-width: 100%;
     }
-
-    header {
-        margin-left: 390px;
-        padding-left: 0;
+    header {/* partie en-tete*/
+        max-width: 100%;
         text-align: left;
+        margin-left: 350px;
+        padding-left: 4vw;
     }
 
     main {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 0;
-        max-width: 418px;
+        max-width: 100%;
         margin-left: 350px;
+        margin-top: 0;
     }
 
     .pmain {
@@ -266,20 +261,12 @@ figure {
         margin-top: 1.5vh;
         padding-left: 4vw;
         padding-right: 0;
-        width: 70vw;
+        width: 100%;
         text-align: justify;
     }
 
-    .list-organisation { /*élements des listes dans le "main" mis en page*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     h2 {
-        text-align: center;
+        text-align: left;
     }
 
     div {
@@ -288,7 +275,7 @@ figure {
         position: absolute;
         top: 0;
         max-width: 350px;
-        height: 1500px;
+        height: 1450px;
     }
 
     .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
@@ -301,21 +288,6 @@ figure {
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
 
-    body {
-        margin: auto;
-        height: 1250px;
-        max-width: 992px;
-        border: 1px black solid; /*encadrement de mon cv*/
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top:0;
-        max-width: 642px;
-        margin-left: 350px;
-    }
 
     .pmain {
         word-wrap: break-word;
@@ -330,7 +302,7 @@ figure {
     }
 
     div {
-        height: 1250px;
+        height: 1220px;
     }
 }
 
@@ -339,17 +311,13 @@ figure {
 
     body {
         margin: auto;
-        height: 1300px;
-        max-width: 1200px;
-        border: 1px black solid; /*encadrement de mon cv*/
-    }
-
-    header {
-        margin-left: 420px;
+        height: 100%;
+        max-width: 100%;
     }
 
     main {
-        max-width: 850px;
+        margin-top: 30px;
+        max-width: 100%;
     }
 
     .pmain {
@@ -357,7 +325,7 @@ figure {
     }
 
     div {
-        height: 1300px;
+        height: 1200px;
     }
 
     .fa-biking,
