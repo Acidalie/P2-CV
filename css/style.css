@@ -11,20 +11,22 @@ html {
 body {
     display: flex;
     flex-direction: column-reverse;
-    word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
-    box-sizing: border-box;
+    height: auto;
     margin: auto;
+    word-wrap: break-word;/* permet que les lignes de textes ne soient pas coupées */
+    box-sizing: content-box;
     text-align: center;
     font-size: 1.4em; /* base font-size equivalent à "14px" */
     font-family: calibri, arial, sans-serif;
     background-color: #FFFFFF;
     background: fixed;/*le fond restera fixe lorsque je dois mettre une image*/
     color: black;
+    border : 1px solid black;
 }
 
 header {/* partie en-tete*/
     position: absolute;
-    top: 8px;
+    top:0;
     width: 100%;
     text-align: center;
 }
@@ -48,9 +50,8 @@ h1 {/* Titre principal Julie Beguier */
     text-decoration: underline #34667D;
 }
 
-main {/*partie principale*/
-    position: relative;
-    top: 25vh;
+main {
+
     padding: 0 4vw;
 }
 
@@ -117,9 +118,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    top: 25vh;
-    margin: 0;
+    margin-top: 200px;
     background-color: #34667D
 }
 
@@ -176,6 +175,7 @@ figure {
  	position:relative;
  	top:9px;
  }
+
 .fa-biking::before{
  	position:relative;
  	top:10px;
@@ -187,23 +187,6 @@ figure {
     body {
         margin: auto;
         text-align: justify;
-    }
-
-    h1 { /* Titre principal Julie Beguier */
-        font-size: 6rem;
-    }
-
-    .subtitle-header {
-        font-size: 3rem;
-    }
-
-    main {
-        margin-top: 70px;
-    }
-
-    div {
-        position: relative;
-        top: 30vh;
     }
 
     .fa-dot-circle,
@@ -229,6 +212,7 @@ figure {
     h3 {
         text-align: center;
     }
+
     .list-organisation-recommandation{
         display: flex;
         flex-direction: row;
@@ -239,21 +223,23 @@ figure {
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
 
-    body {
-        height: 100%;
-        max-width: 100%;
-    }
-    header {/* partie en-tete*/
-        max-width: 100%;
-        text-align: left;
+    header{
+        margin-top: 20px;
         margin-left: 350px;
         padding-left: 4vw;
+        text-align: left;
     }
 
-    main {
-        max-width: 100%;
+    h2{
+        text-align: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 180px;
         margin-left: 350px;
-        margin-top: 0;
     }
 
     .pmain {
@@ -265,67 +251,31 @@ figure {
         text-align: justify;
     }
 
-    h2 {
-        text-align: left;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
+    div{
+        margin-top: 0;
         max-width: 350px;
-        height: 1450px;
-    }
-
-    .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
-        padding: 3vh 3vw;
-        text-align: justify;
-        line-height: 2.5rem;
     }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
 
-
-    .pmain {
-        word-wrap: break-word;
-        margin-top: 1.5vh;
-        padding-left: 6vw;
-        padding-right: 0;
-        text-align: justify;
-    }
-
-    h2 {
+    h2{
         text-align: left;
     }
 
-    div {
-        height: 1220px;
+    .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
+        padding: 5vh 5vw;
+        text-align: justify;
+        line-height: 2.5rem;
     }
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media screen and (min-width: 1200px) {
 
-    body {
-        margin: auto;
-        height: 100%;
-        max-width: 100%;
-    }
-
-    main {
-        margin-top: 30px;
-        max-width: 100%;
-    }
-
-    .pmain {
-        padding-left: 15vw;
-    }
-
-    div {
-        height: 1200px;
+    .padding-20 { /* décalage de 20px du texte "a propos" dans div*/
+        padding: 2vh 2vw;
     }
 
     .fa-biking,
@@ -335,7 +285,6 @@ figure {
         text-align: center;
     }
 }
-
 
 
 
