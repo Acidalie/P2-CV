@@ -18,13 +18,13 @@ body {
     border : 1px solid black;
 }
 
-/*--------------- NOUVEAU CODE DE CET APREM 28/05--------------*/
-
 /*------partie en-tête du CV-----*/
 
 header{
-
+    
     text-align: center;
+    padding-top: 1.5vw;
+    margin-bottom: 3vw;
 }
 
 h1 {/* Titre principal Julie Beguier*/
@@ -146,25 +146,24 @@ address{
 }
 
 .list-hobbies {
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: space-evenly;
-    list-style-type: none;
+    display: flex;
+    justify-content: space-around
+
 }
 
  .fa-biking,
  .fa-mountain,
  .fa-globe-europe {
     margin: 5vh 1vw;
-  	border: 2px black solid;
+     font-size: 3.5rem;
+     /*------ si icone dans cercle-----*/
+  	/*border: 2px black solid;
   	border-radius: 250px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 3rem;
+    width: 55px;
+    height: 55px;*/
  }
 
-.fa-globe-europe::before {
+/*.fa-globe-europe::before {
  	position:relative;
  	top:11px;
 }
@@ -177,7 +176,8 @@ address{
 .fa-biking::before{
  	position:relative;
  	top:10px;
- }
+ }*/
+
 
 /*Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) {
@@ -186,319 +186,55 @@ address{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) {
 
-    header{
-        text-align: left;
-        margin-left: 350px;
-        padding-left: 3vw ;
-    }
-
-    main{
-        margin-left: 350px;
+    body{
+        flex-direction: row;
     }
 
     .pmain {
-        width: 25vw;
+        margin-left: 0;
+        padding-left: 5vw;
+        width: auto;
+    }
+
+    .list-organisation{
+        min-width: 200px
     }
 
     div{
-        position: absolute;
-        top: 1.2vh;
         width: 350px;
+        height: auto;
     }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
 
-    h2{
-        text-align: left;
-    }
-
-    .pmain {
-        width: 35vw;
-    }
-
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media screen and (min-width: 1200px) {
-
-    .pmain {
-        width: 45vw;
-    }
-
-}
-
-
-
-
-
-
-/*--------------- ANCIEN CODE DE CE MATIN 28/05--------------*/
-
-/*header {/* partie en-tete
-    position: absolute;
-    top:0;
-    width: 100%;
-    text-align: center;
-}
-
-h1 {/* Titre principal Julie Beguier
-    margin-bottom: 15px;
-    font-size: 5rem;
-    font-weight: normal;/*ne sera plus en gras
-    text-transform: uppercase;/*texte en capitale
-}
-
-.firstname-color {
-    color: #34667D;
-}
-
-.subtitle-header {
-    font-size: 2rem;
-}
-
-.under-dev {
-    text-decoration: underline #34667D;
-}
-
-main {
-
-    padding: 0 4vw;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-/* partie Main
-
-.fa-user-graduate,
-.fa-briefcase,
-.fa-thumbs-up {/*icones titre h2
-    font-size: 2.5rem;
-    color: #34667D;
-}
-
-.fa-dot-circle,
-.fa-circle {/*icones point
-    font-size: 1rem;
-    color: #34667D
-}
-
-h2 {/*formations, experiences, recommandation.
-    margin-top: 1vh;
-    border-bottom: 3px #34667D solid;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.padding-left-title {
-    padding-left: 2vw;
-}
-
-h3 {/*titre de la div
-    margin-bottom: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-strong {
-    font-size: 1.7rem;
-}
-
-.pmain {
-    margin-top: 2vh;
-    width: 55vw;
-    text-align: justify;
-}
-
-.list-organisation {/*élements des listes dans le "main" mis en page
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* Partie DIV
-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 200px;
-    background-color: #34667D
-}
-
-figure {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.image-cv{
-    border: 2px black solid;
-    border-radius: 250px;
-}
-
-.h3-background{/*fond des titres dans la div
-    margin-top: 0;
-    padding: 1vh 0;
-    background-color: black;
-    color: #34667D;
-}
-
-.padding-20 { /* décalage de 20px du texte "a propos" dans div
-    padding: 3vh 4vw;
-    line-height: 2.5rem;
-    text-align: justify;
-}
-
-/*section hobbies
-.list-hobbies {
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: space-evenly;
-    list-style-type: none;
-}
-
- .fa-biking,
- .fa-mountain,
- .fa-globe-europe {
-    margin: 5vh 1vw;
-  	border: 2px black solid;
-  	border-radius: 250px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 3rem;
- }
-
-.fa-globe-europe::before {
- 	position:relative;
- 	top:11px;
-}
-
-.fa-mountain::before{
- 	position:relative;
- 	top:9px;
- }
-
-.fa-biking::before{
- 	position:relative;
- 	top:10px;
- }
-
-/*Small devices (landscape phones, 576px and up)
-@media screen and (min-width: 576px) {
-
     body {
         margin: auto;
-        text-align: justify;
+        max-width: 850px;
     }
 
-    .fa-dot-circle,
-    .fa-circle { /*icones point
-        padding-top: 0.5vh;
-        padding-right: 1vw;
-    }
-
-    /*organisation mise en page partie formation, expe, recommand
-    .padding-10 {
-        display: flex;
-        flex-direction: row;
-    }
-
-    address {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        line-height: 3rem;
-    }
-
-    h3 {
-        text-align: center;
-    }
-
-    .list-organisation-recommandation{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/*Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) {
-
-    header{
-        margin-top: 20px;
-        margin-left: 350px;
-        padding-left: 4vw;
+    header {
         text-align: left;
     }
 
-    h2{
-        text-align: center;
-    }
-
-    main{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 180px;
-        margin-left: 350px;
-    }
-
-    .pmain {
-        margin-top: 1.5vh;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        width: 100%;
-        text-align: justify;
-    }
-
-    div{
-        margin-top: 0;
-        max-width: 350px;
-    }
-
-    /*.padding-20 {
-        padding: 5vh 5vw;
-    }*/
-
-
-/* Large devices (desktops, 992px and up)
-@media screen and (min-width: 992px) {
-
-
-    h2{
+    h2 {
         text-align: left;
-    }
-
-   /* .padding-20 {
-        padding: 4vh 3vw;
     }
 }
 
-/*Extra large devices (large desktops, 1200px and up)
-@media screen and (min-width: 1200px) {
 
-   /* .padding-20 {
-        padding: 2vh 2vw;
-    }
-}*/
+
+
+
+
+
 
 
 
