@@ -106,7 +106,6 @@ h2 {/*formations, experiences, recommandation.*/
 /*------partie à propos de moi "div"------*/
 
 div{
-    align-content: flex-start;
     background-color: #34667D
 }
 
@@ -148,7 +147,6 @@ address{
 .list-hobbies {
     display: flex;
     justify-content: space-around
-
 }
 
  .fa-biking,
@@ -203,8 +201,15 @@ address{
     }
 
     div{
+        display: flex;
+        flex-direction: column;
         width: 350px;
         height: auto;
+    }
+
+    .padding-20 {
+        padding: 20px;
+        text-align: justify;
     }
 
     .padding-10{
