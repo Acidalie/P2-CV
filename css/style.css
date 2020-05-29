@@ -202,13 +202,17 @@ address{
         width: auto;
     }
 
-    .list-organisation{
-        min-width: 200px
-    }
-
     div{
         width: 350px;
         height: auto;
+    }
+
+    .padding-10{
+       display: flex;
+    }
+
+    .list-organisation i{
+        margin: 5px 10px 0 0;
     }
 }
 
