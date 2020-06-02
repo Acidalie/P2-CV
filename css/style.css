@@ -149,32 +149,34 @@ address{
     justify-content: space-around
 }
 
- .fa-biking,
- .fa-mountain,
- .fa-globe-europe {
+.fa-biking,
+.fa-mountain,
+.fa-globe-europe {
     margin: 5vh 1vw;
-     font-size: 3.5rem;
-     /*------ si icone dans cercle-----*/
-  	/*border: 2px black solid;
+    font-size: 3.5rem;
+  	border: 2px black solid;
   	border-radius: 250px;
     width: 55px;
-    height: 55px;*/
+    height: 55px;
  }
 
-/*.fa-globe-europe::before {
+.fa-globe-europe::before {
  	position:relative;
  	top:11px;
+    margin-left: 11px;
 }
 
 .fa-mountain::before{
  	position:relative;
  	top:9px;
+    margin-left: 5px;
  }
 
 .fa-biking::before{
  	position:relative;
  	top:10px;
- }*/
+    margin-left: 5px;
+ }
 
 
 /*Small devices (landscape phones, 576px and up)*/
