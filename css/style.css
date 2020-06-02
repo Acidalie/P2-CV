@@ -207,6 +207,8 @@ address{
         width: auto;
     }
 
+    /*------partie à propos de moi "div"------*/
+
     div{
         display: flex;
         flex-direction: column;
