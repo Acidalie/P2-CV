@@ -31,6 +31,7 @@ h1 {/* Titre principal Julie Beguier*/
     font-size: 5rem;
     font-weight: normal;/*ne sera plus en gras*/
     text-transform: uppercase;/*texte en capitale*/
+    margin-bottom: 0;
 }
 
 .firstname-color {
@@ -38,6 +39,8 @@ h1 {/* Titre principal Julie Beguier*/
 }
 
 .subtitle-header {
+    margin-top: 0;
+    margin-bottom: 70px;
     font-size: 2rem;
 }
 
@@ -71,10 +74,12 @@ li {
 .fa-circle {/*icones point*/
     font-size: 1rem;
     color: #34667D
+    margin-bottom: 15px;
 }
 
 h2 {/*formations, experiences, recommandation.*/
-    margin-top: 1vh;
+    margin-top: 5vh;
+    margin-bottom: 20px;
     border-bottom: 3px #34667D solid;
     font-size: 2.5rem;
     font-weight: bold;
@@ -82,7 +87,7 @@ h2 {/*formations, experiences, recommandation.*/
 }
 
 .padding-left-title {
-    padding-left: 2vw;
+    padding-left: 1vw;
 }
 
 .pmain {
