@@ -73,7 +73,7 @@ li {
 .fa-dot-circle,
 .fa-circle {/*icones point*/
     font-size: 1rem;
-    color: #34667D
+    color: #34667D;
     margin-bottom: 15px;
 }
 
@@ -226,6 +226,7 @@ address{
     .list-organisation i{
         margin: 5px 10px 0 0;
     }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
