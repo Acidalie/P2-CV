@@ -104,6 +104,10 @@ h2 {/*formations, experiences, recommandation.*/
     margin-right: 0;
 }
 
+.padding-10{
+    margin-top: 18px;
+}
+
 .list-organisation-recommandation{
     text-align: center;
 }
@@ -141,6 +145,10 @@ h3 {/*titre de la div*/
 
 address{
     text-align: center;
+}
+
+.container-a-propos{
+    height: 450px;
 }
 
 .padding-20 {
@@ -212,6 +220,7 @@ address{
     div{
         display: flex;
         flex-direction: column;
+        position: relative;
         width: 350px;
         height: auto;
     }
@@ -228,6 +237,12 @@ address{
 
     .padding-10{
        display: flex;
+    }
+
+    .section-organisation{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .list-organisation i{
