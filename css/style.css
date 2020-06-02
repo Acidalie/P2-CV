@@ -214,6 +214,11 @@ address{
         height: auto;
     }
 
+    address{
+        text-align: left;
+        padding: 20px;
+    }
+
     .padding-20 {
         padding: 20px;
         text-align: justify;
